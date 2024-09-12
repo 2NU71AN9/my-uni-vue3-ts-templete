@@ -1,0 +1,80 @@
+{
+  "pages": [
+    {
+      "path": "pages/login/welcome",
+      "style": {
+        "navigationBarTitleText": "欢迎",
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/discover/index",
+      "style": {
+        "navigationBarTitleText": "发现",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "标题",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#C3C5C9",
+    "selectedColor": "#169155",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "iconWidth": "24px",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/images/tabbar/footer-bar-index-icon.png",
+        "selectedIconPath": "static/images/tabbar/footer-bar-index-icon-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/discover/index",
+        "iconPath": "static/images/tabbar/footer-bar-discover-icon.png",
+        "selectedIconPath": "static/images/tabbar/footer-bar-discover-icon-on.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "iconPath": "static/images/tabbar/footer-bar-user-icon.png",
+        "selectedIconPath": "static/images/tabbar/footer-bar-user-icon-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^tm-(.*)": "@/tmui/components/tm-$1/tm-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  }
+}
