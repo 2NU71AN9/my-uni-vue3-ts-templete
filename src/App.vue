@@ -1,10 +1,19 @@
 <script setup lang="ts">
-import { onLaunch, onShow, onHide } from "@dcloudio/uni-app";
+import { onLaunch, onShow, onHide, onResize } from "@dcloudio/uni-app";
+import { useDeviceStore } from "@/store";
+
+const deviceStore = useDeviceStore();
+
 onLaunch(() => {
   console.log("App Launch");
+  deviceStore.windowResize();
 });
 onShow(() => {
   console.log("App Show");
+});
+onResize(() => {
+  console.log("App Resize");
+  deviceStore.windowResize();
 });
 onHide(() => {
   console.log("App Hide");
