@@ -36,15 +36,4 @@ export const useDeviceStore = defineStore("device", {
       console.log("windowResize", this.deviceInfo);
     },
   },
-  // 持久化
-  persist: {
-    storage: {
-      setItem(key, value) {
-        uni.setStorageSync(key, value);
-      },
-      getItem(key) {
-        return uni.getStorageSync(key);
-      },
-    },
-  },
 });
