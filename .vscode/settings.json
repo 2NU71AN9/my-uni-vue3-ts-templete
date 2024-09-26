@@ -3,5 +3,6 @@
     "src/tmui/locale",
     "src/tmui/tool/dayjs/locale",
     "src/tmui/tool/dayjs/esm/locale"
-  ]
+  ],
+  "i18n-ally.sourceLanguage": "en"
 }

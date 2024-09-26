@@ -1,5 +1,5 @@
-import { createPinia } from "pinia";
-import persist from "pinia-plugin-persistedstate";
+import { createPinia } from 'pinia';
+import persist from 'pinia-plugin-persistedstate';
 
 // 创建 pinia 实例
 const pinia = createPinia();
@@ -10,5 +10,5 @@ pinia.use(persist);
 export default pinia;
 
 // 模块统一导出
-export * from "./modules/user";
-export * from "./modules/device";
+export * from './modules/user';
+export * from './modules/device';

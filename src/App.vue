@@ -1,33 +1,33 @@
 <script setup lang="ts">
-import { onLaunch, onShow, onHide, onResize } from "@dcloudio/uni-app";
-import { useDeviceStore } from "@/store";
+import { onLaunch, onShow, onHide, onResize } from '@dcloudio/uni-app';
+import { useDeviceStore } from '@/store';
 
 const deviceStore = useDeviceStore();
 
 onLaunch(() => {
-  console.log("App Launch");
-  deviceStore.windowResize();
+	console.log('App Launch');
+	deviceStore.windowResize();
 });
 onShow(() => {
-  console.log("App Show");
+	console.log('App Show');
 });
 onResize(() => {
-  console.log("App Resize");
-  deviceStore.windowResize();
+	console.log('App Resize');
+	deviceStore.windowResize();
 });
 onHide(() => {
-  console.log("App Hide");
+	console.log('App Hide');
 });
 </script>
 <style lang="scss">
 /* #ifdef APP-NVUE */
-@import "./tmui/scss/nvue.css";
+@import './tmui/scss/nvue.css';
 /* #endif */
 /* #ifndef APP-NVUE */
-@import "./tmui/scss/noNvue.css";
+@import './tmui/scss/noNvue.css';
 /* #endif */
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 </style>
