@@ -44,7 +44,8 @@
 		"postinstall": "weapp-tw patch",
 		"lint": "eslint src",
 		"fix": "eslint src --fix",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@dcloudio/uni-app": "3.0.0-4020420240722002",
