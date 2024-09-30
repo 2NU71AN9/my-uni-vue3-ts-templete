@@ -34,7 +34,7 @@ const loadData = (e: number) => {
 	console.log('🚀 ~ loadData ~ e:', e);
 	paging.value.complete([1, 2, 3]);
 	const aaaa = 1;
-	// console.log('🚀 ~ loadData ~ aaaa:', aaaa);
+	console.log('🚀 ~ loadData ~ aaaa:', aaaa);
 	const a = [1, 2, 3];
 	console.log('🚀 ~ loadData ~ a:', a);
 	if (a.length === 0) {
