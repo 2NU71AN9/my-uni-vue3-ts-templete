@@ -1,5 +1,12 @@
 <template>
-	<view>发现</view>
+	<frame-set>
+		<template #main>
+			<view>main</view>
+		</template>
+		<template>
+			<view>sub</view>
+		</template>
+	</frame-set>
 </template>
 
 <script setup lang="ts">
