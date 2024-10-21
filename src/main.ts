@@ -3,7 +3,7 @@ import { createSSRApp } from 'vue';
 import App from './App.vue';
 import pinia from '@/store';
 import tmui from './tmui';
-
+import '@/static/css/tailwindcss.scss';
 declare let uni: any;
 
 export function createApp() {

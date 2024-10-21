@@ -1,7 +1,12 @@
 <template>
 	<frame-set>
 		<template #main>
-			<view>main</view>
+			<y-cell-group>
+				<y-cell title="这是标题" desc="这是描述" />
+				<y-cell title="这是标题" desc="这是描述" />
+				<y-cell title="这是标题" desc="这是描述" />
+				<y-cell title="这是标题" desc="这是描述" />
+			</y-cell-group>
 		</template>
 		<template>
 			<view>sub</view>

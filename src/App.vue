@@ -26,7 +26,7 @@ onHide(() => {
 /* #ifndef APP-NVUE */
 @import './tmui/scss/noNvue.css';
 /* #endif */
-
+@import 'static/css/index.scss';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
