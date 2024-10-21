@@ -19,5 +19,4 @@ dist
 *.njsproj
 *.sln
 *.sw?
-
 .VSCodeCounter
