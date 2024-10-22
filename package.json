@@ -64,6 +64,7 @@
 		"@dcloudio/uni-mp-xhs": "3.0.0-4020420240722002",
 		"@dcloudio/uni-quickapp-webview": "3.0.0-4020420240722002",
 		"class-transformer": "^0.5.1",
+		"lottie-miniprogram": "^1.0.12",
 		"pinia": "^2.2.2",
 		"pinia-plugin-persistedstate": "^4.0.1",
 		"reflect-metadata": "^0.2.2",

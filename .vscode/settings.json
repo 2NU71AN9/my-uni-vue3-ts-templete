@@ -1,5 +1,6 @@
 {
 	"i18n-ally.localesPaths": ["src/tmui/locale", "src/tmui/tool/dayjs/locale", "src/tmui/tool/dayjs/esm/locale"],
 	"i18n-ally.sourceLanguage": "en",
-	"scss.lint.unknownAtRules": "ignore"
+	"scss.lint.unknownAtRules": "ignore",
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
