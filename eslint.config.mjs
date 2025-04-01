@@ -21,14 +21,7 @@ export default [
 	...tseslint.configs.recommended,
 	...pluginVue.configs['flat/essential'],
 	{
-		ignores: [
-			'**/*.config.js',
-			'dist/**',
-			'node_modules/**',
-			'**/tmui/**',
-			'package-lock.json',
-			'**/*.d.ts',
-		],
+		ignores: ['**/*.config.js', 'dist/**', 'node_modules/**', '**/tmui/**', 'package-lock.json', '**/*.d.ts'],
 	},
 	{
 		// files: ['**/*.vue', '**/*.ts'],
@@ -83,10 +76,7 @@ export default [
 				},
 			],
 			// 变量必须先定义后使用
-			'no-use-before-define': [
-				'error',
-				{ functions: false, classes: false, variables: false },
-			],
+			'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
 			// 禁止 for 循环出现方向错误的循环，比如 for (i = 0; i < 10; i--)
 			'for-direction': 'error',
 			// getter 必须有返回值，并且禁止返回空，比如 return;
@@ -281,11 +271,7 @@ export default [
 			// @fixable 大括号内的首尾必须有换行
 			'object-curly-newline': ['error', { multiline: true, consistent: true }],
 			// @fixable 对象字面量只有一行时，大括号内的首尾必须有空格
-			'object-curly-spacing': [
-				'error',
-				'always',
-				{ arraysInObjects: true, objectsInObjects: false },
-			],
+			'object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: false }],
 			// 禁止变量申明时用逗号一次申明多个
 			'one-var': ['error', 'never'],
 			// @fixable 变量申明必须每行一个
@@ -303,10 +289,7 @@ export default [
 			// @fixable if, function 等的大括号之前必须要有空格，比如 if (a) {
 			'space-before-blocks': ['error', 'always'],
 			// @fixable function 的小括号之前必须要有空格
-			'space-before-function-paren': [
-				'error',
-				{ anonymous: 'ignore', named: 'never', asyncArrow: 'always' },
-			],
+			'space-before-function-paren': ['error', { anonymous: 'ignore', named: 'never', asyncArrow: 'always' }],
 			// @fixable 小括号内的首尾禁止有空格
 			'space-in-parens': ['error', 'never'],
 			// @fixable 操作符左右必须有空格，比如 let sum = 1 + 2;
